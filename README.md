@@ -1,110 +1,94 @@
 <!DOCTYPE html>
 <html lang="cs">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <title>Priprava na praktickou prověrku</title>
-  </head>
-  <body>
-    <header>
-      <h1>Příprava na praktickou prověrku</h1>
-    </header>
-     <main>
-      <ul>
-      <li><a href="#s1">Textove upravy</a></li>
-      <li><a href="#s2">Tabulka</a></li>
-      </ul>
-      <h2 id="s1">Textove upravy</h2>
-      <h3>Adresy pouzivane na internetu</h3>
-      <p>
-        <b>IP adresa</b> je v informatice číslo, které jednoznačně identifikuje
-        síťové rozhraní v počítačové síti, která používá IP protokol. V současné
-        době je nejrozšířenější <b>IPv4</b>, která používá 32bitové IP adresy,
-        které jsou zapisovány dekadicky po jednotlivých oktetech (tj. po
-        osmicích bitů), například 192.168.0.2. Z důvodu nedostatku adres je IPv4
-        postupně nahrazován protokolem <b>IPv6</b>, který používá 128bitové IP
-        adresy zapsané hexadecimálně
-      </p>
-      <h3>Seznam vyznamnych terminu a zkratek</h3>
-      <h4>HTML</h4>
-      <p>
-        First developed by Tim Berners-Lee in 1990, HTML is short for Hypertext
-        Markup Language. HTML is used to create electronic documents (called
-        pages) that are displayed on the World Wide Web. Each page contains a
-        series of connections to other pages called hyperlinks. Every web page
-        you see was written using one version of HTML.
-      </p>
-      <h4>HTTP</h4>
-      <p>
-        HTTP means <b>HyperText Transfer Protocol</b>. HTTP is the underlying
-        protocol used by the World Wide Web. Developed by Tim Berners-Lee, HTTP
-        defines how messages are formatted and transmitted, and what actions Web
-        servers and browsers should take in response to various commands.
-      </p>
-      <h4>Validation</h4>
-      <p>
-        Validation is an automatic computer check to ensure that the data
-        entered is sensible and reasonable. It does not check the accuracy of
-        data.
-      </p>
-      <h4>Server</h4>
-      <p>
-        A server is a computer, a device or a program that is dedicated to
-        managing network resources. They are called that because they “serve”
-        another computer, device, or program called “client” to which they
-        provide functionality. There are a number of categories of servers,
-        including print servers, file servers, network servers and database
-        servers. In theory, whenever computers share resources with client
-        machines they are considered servers. However, servers are often
-        referred to as dedicated because they carry out hardly any other tasks
-        apart from their server tasks.
-      </p>
-      <h2 id="s2">Tabulka</h2>
-      <table style="margin-bottom: 3%;">
-        <thead>
-            <tr style="height: 50px;">
-                <th rowspan="2" style="width: 200px;">Nečíslovaný seznam</th>
-                <th colspan="2">Prvky stránky</th>
-                <th rowspan="2">Obrázek</th>
-            <tr>
-                <th style="width: 12%;">Značky</th>
-                <th style="width: 15%">Entity</th>
-            </tr>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="generator" content="PSPad editor, www.pspad.com">
+        <title>Úvod do CSS</title>
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/styly.css">
+    </head>
+    <body>
+        <div id="obal">
+            <nav>
+                <a href="https://validator.w3.org/">Validátor</a>
+                <a href="https://www.w3schools.com/">W3Schools</a>
+                <a href="https://www.jakpsatweb.cz/">Jak psát web</a>
+    
+            </nav>
+            <h1>Úvod do CSS</h1>
+            <h2>Co jsou kaskádové styly</h2>
 
-
-        </thead>
-        <tbody>
-            <tr>
-                <td rowspan="2">
-                    <ul>
-                        <li>IP Adresa</li>
-                        <li>Jmenná adresa</li>
-                        <li>URL</li>
-                    </ul>
-                </td>
-                <td>H2O</td>
-                <td>&</td>
-              <td rowspan="2"><img  src="../download.jpg" alt="Hello">
-                </td>
-            <tr>
-                <td>c = a2 + b2</td>
-                <td>&copy;</td>
-            </tr>
-
-        </tbody>
-        <tfoot>
-            <tr>
-                <td>Odkaz:</td>
-                <td colspan="3"><a href="https://www.youtube.com/">www.youtube.com</a></td>
-            </tr>
-        </tfoot>
-    </table>
-    </main>
-    <footer>
-      <hr>
-      <h1>&copy; Patrik Tomaštík, IT1,SŠPU Opava</h1>
-  </footer>
-  </body>
+            <p><abbr title="Cascading style sheets">CSS</abbr> is a <mark>W3C</mark> 
+                standard for describing the appearance of <abbr title="HyperText Markup Language">HTML</abbr> elements.
+                Another common way to describe CSS’s function is to say that CSS is used to define
+                the presentation of HTML documents. With CSS, we can assign font properties,
+                colors, sizes, borders, background images, and even position <mark>elements</mark> on the page.
+                CSS can be added directly to any HTML element (via the <code>style</code> attribute), within
+                the <code>&lt;head&gt;</code> element, or, most commonly, in a separate text file that contains only CSS.</p>
+            <h3>Výhody kaskádových stylů</h3>
+    
+            <ul>
+                <li><b>Improved control over formatting.</b> The degree of formatting control in CSS is
+                    significantly better than that provided in HTML. CSS gives web authors
+                    fine-grained control over the appearance of their web content.</li>
+                <li><b>Improved site maintainability.</b> Websites become significantly more maintainable
+                    because all formatting can be centralized into one CSS file, or a small handful of
+                    them. This allows you to make site-wide visual modifications by changing a
+                    single file.</li>
+                <li><b>Improved accessibility.</b> CSS-driven sites are more accessible. By keeping
+                    presentation out of the HTML, <strong>screen readers</strong> and other accessibility tools
+                    work better, thereby providing a significantly enriched experience for those
+                    reliant on accessibility tools.</li>
+                <li><b>Improved page download speed.</b> A site built using a centralized set of CSS files
+                    for all presentation will also be quicker to download because each individual
+                    HTML file will contain less style information and markup, and thus be smaller.</li>
+                <li><b>Improved output flexibility.</b> CSS can be used to adopt a page for different
+                    output media. This approach to CSS page design is often referred to as
+                    <strong>responsive design</strong>.</li>
+                </ul>
+            <h3>Verze CSS</h3>
+            <p>Style sheets as a way to visually format markup predate the web. 
+                In the early 1990s, a variety of different style sheet standards were proposed, including
+                JavaScript style sheets, which was proposed by Netscape in 1996. Netscape’s proposal
+                was one that required the use of JavaScript programming to perform style
+                changes. Thankfully for nonprogrammers everywhere, the W3C decided to adopt
+                CSS, and by the end of 1996 the CSS Level 1 Recommendation was published. A
+                year later, the CSS Level 2 Recommendation (also more succinctly labeled simply as
+                CSS2) was published.</p>
+    
+            <p class="poznamka">Even though work began over a decade ago, an updated version of the Level 2
+                Recommendation, CSS2.1, did not become an official W3C Recommendation until
+                June 2011. And to complicate matters even more, all through the last decade (and
+                to the present day as well), during the same time the CSS2.1 standard was being
+                worked on, a different group at the W3C was working on a CSS3 draft. To make
+                CSS3 more manageable for both browser manufacturers and web designers, the
+                W3C has subdivided it into a variety of different CSS3 modules. So far the following
+                CSS3 modules have made it to official W3C Recommendations: CSS Selectors, CSS
+                Namespaces, CSS Media Queries, and CSS Color.</p>
+            <h3>Prohlížeče a CSS</h3>
+            <p>Perhaps the most important thing to keep in mind with CSS is that the different
+                browsers have not always kept up to the W3C. While Microsoft’s Internet Explorer
+                was an early champion of CSS (its IE3, released in 1996, was the first major browser
+                to support CSS, and its IE5 for the Macintosh was the first browser to reach almost
+                100% CSS1 support in 2000), its later versions (especially IE5, IE6, and IE7) for
+                Windows had uneven support for certain parts of CSS2. However, all browsers have
+                not implemented parts of the CSS2 Recommendation.</p>
+        
+            <p class="poznamka">For this reason, CSS has a reputation for being a somewhat frustrating language.
+                Based on over a decade of experience teaching university students CSS, this reputation is well deserved. Since CSS was designed to be a styling language, text
+                styling is quite easy. However, CSS was not really designed to be a layout language,
+                so authors often find it tricky dealing with floating elements, relative positions,
+                inconsistent height handling, overlapping margins, and nonintuitive naming
+                (we’re looking at you, relative and !important). When one adds in the uneven
+                CSS 2.1 support (prior to IE8 and Firefox 2) in browsers for CSS2.1, it becomes
+                quite clear why many software developers developed a certain fear and loathing
+                of CSS.</p>
+            <h2>CSS syntax</h2>
+            <img src="./img/selector.gif" alt="selector.gif">
+        
+    </div>
+    </body>
+    <footer> 
+        <p>Copyright &copy; IT1, Opava 2015</p>
+    </footer>
 </html>
